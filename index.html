@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <img src="/images/test.png" alt="" style="width:10%">
+      {{> body}}
+      <h2>{{ title }}</h2>
+      {{#loop 3}}
+        <h3>測試helper</h3>
+      {{/loop }}
+      <div id="inject"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
